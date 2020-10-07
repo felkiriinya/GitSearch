@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Repository } from '../models/repository';
-import { RepositoryByName } from '../models/repository-by-name';
+
 import { User } from '../models/user';
 
 @Injectable({
@@ -12,7 +12,6 @@ export class ServicesService {
 
   user: User;
   repos: Repository[]=[];
-  reposByName: RepositoryByName[]=[];
   username:string;
   reponame:string;
   repositories=[]
