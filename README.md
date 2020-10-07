@@ -5,6 +5,8 @@
 ## Description
 On the application's landing page we have my profile where you can click on the view repos button to view my repositorie.  One can search for any github user they want using the user input on the navigation bar. The search results then display relevant information on the Github user and Github repository respectively.
 
+![landing](src/assets/landing.png)
+![repo](src/assets/repo.png)
 
 ## Live link
 
