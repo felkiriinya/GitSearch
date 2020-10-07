@@ -5,7 +5,7 @@ import { NameResultComponent } from './components/name-result/name-result.compon
 import { RepoResultComponent } from './components/repo-result/repo-result.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch:'full'},
+  {path: '', redirectTo: 'my-home', pathMatch:'full'},
   {path: 'my-home', component: MyHomeComponent},
   {path: 'name-result/:username' , component:NameResultComponent},
   {path: 'repo-result/:reponame', component:RepoResultComponent},

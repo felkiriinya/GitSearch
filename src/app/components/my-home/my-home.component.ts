@@ -1,4 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/models/user';
+import { ServicesService } from 'src/app/services/services.service';
 
 @Component({
   selector: 'app-my-home',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyHomeComponent implements OnInit {
 
-  constructor() { }
+  user:User;
+  
 
-  ngOnInit(): void {
+  constructor(private servicesService: ServicesService, private http:HttpClient) { }
+
+  ngOnInit(){
+    this.servicesService.requestUserInfo("felkiriinya")
+    this.user = this.servicesService.user
   }
 
 }
