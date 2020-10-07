@@ -1,13 +1,18 @@
 .card {
-    /*animates card elements*/
+    
     margin: 3%;
-    width: 21rem;
+    width: 19rem;
+    height: 16rem;
     transform: translateY(-2px);
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+    background-color: black;
+    color: white;
+    margin-left: 5%;
+    border-radius: 5px;
   }
   
   .cards {
-    /*allows for cards to append side by side*/
+    
     display: flex;
     flex-wrap: wrap;
   }
