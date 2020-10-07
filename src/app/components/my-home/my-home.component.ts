@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Repository } from 'src/app/models/repository';
 import { User } from 'src/app/models/user';
 import { ServicesService } from 'src/app/services/services.service';
 
@@ -11,6 +12,14 @@ import { ServicesService } from 'src/app/services/services.service';
 export class MyHomeComponent implements OnInit {
 
   user:User;
+  repos:Repository[];
+
+  showRepositories=false;
+
+  toggleRepositories(){
+    this.showRepositories=!this.showRepositories
+  }
+
   
 
   constructor(private servicesService: ServicesService, private http:HttpClient) { }
@@ -18,6 +27,10 @@ export class MyHomeComponent implements OnInit {
   ngOnInit(){
     this.servicesService.requestUserInfo("felkiriinya")
     this.user = this.servicesService.user
+    this.servicesService.requestRepositories("felkiriinya")
+    this.repos = this.servicesService.repos
+
+    this.showRepositories=false;
   }
 
 }

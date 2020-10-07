@@ -1,1 +1,37 @@
-<p>repo-result works!</p>
+<div class="cards">
+    <div class="card" *ngFor="let repo of repos">
+        <div class="card-body">
+            <div class="card-title">
+
+                <a href="{{repo.html_url}}">{{repo.name|titlecase}}</a>
+
+            </div>
+
+            <div class="card-text">
+                <p *ngIf="repo.description">{{repo.description}}</p>
+                <p *ngIf="!repo.description">No description is available for this repository</p>
+
+            </div>
+            <div class="card-bottom">
+                <div *ngIf="repo.language">
+                    <i class="fas fa-circle"></i>&nbsp;{{repo.language}}
+                  </div>&nbsp;&nbsp;
+                  <div *ngIf="!repo.language">
+                    <i class="fas fa-circle"></i>&nbsp;Undefined
+                  </div>&nbsp;&nbsp;
+                  <div>
+                    {{repo.forks}}&nbsp;<i class="fas fa-code-branch"></i>&nbsp;Forks
+                    </div>
+                    
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</div>
+Are You Working?
+ 

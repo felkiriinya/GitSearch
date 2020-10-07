@@ -57,7 +57,48 @@ let promise =new Promise ((resolve, reject)=>{
     return promise
 
    }
-   
+
+   requestRepositories(username){
+     interface repoApiResponse{
+      name: string,
+      description: string,
+      language: string,
+      html_url: string,
+      forks: number
+     }
+     
+     let promise = new Promise ((resolve,reject)=>{
+      let arrayLength = this.repos.length;
+
+      for (let i=0; i<arrayLength; i++){
+          this.repos.pop()
+      }
+      this.http.get<repoApiResponse>(`https://api.github.com/users/${username}/repos?client_id=1179d43fb4eb61d15d6b3855fd52434a802d74e4`).toPromise().then(response=>{
+        for (let i=0; i<this.user.public_repos; i++){
+            let repo = new Repository("","","","",0)
+
+            repo.name = response[i]["name"]
+            repo.description =response[i]["description"]
+            repo.language=response[i]["language"]
+            repo.html_url = response [i]["html_url"]
+            repo.forks = response[i]["forks"]
+
+            this.repos.push(repo)
+        }
+        resolve()
+    },
+
+    error => {
+        console.log("an error occurred")
+        reject(error)
+    }
+    )
+   })
+
+    return promise
+     }
+  
+
    constructor(private http: HttpClient, private route: ActivatedRoute ) {
     this.user = new User ("","","",0,0,0,new Date(),"")
    }

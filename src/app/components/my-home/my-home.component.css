@@ -11,7 +11,7 @@
     margin-left: 6%;
     border-radius: 8px;
     position: relative;
-    left: 12%;
+    left: 5%;
     width: 900px;
   }
   #profile button {
@@ -27,4 +27,12 @@
     padding-bottom: 0;
     display: flex;
     align-items: flex-end;
+  }
+
+  
+  img {
+    max-width: 18rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 1.8rem;
   }
