@@ -9,9 +9,10 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { NameResultComponent } from './components/name-result/name-result.component';
 import { RepoResultComponent } from './components/repo-result/repo-result.component';
 import { TimePassedPipe } from './pipes/time-passed.pipe';
-import { HiglightDirective } from './directives/higlight.directive';
+
 import { FormsModule } from '@angular/forms';
 import { NameRepoComponent } from './components/name-repo/name-repo.component';
+import { BoldDirective } from './directives/bold.directive';
 
 @NgModule({
   declarations: [
@@ -21,8 +22,10 @@ import { NameRepoComponent } from './components/name-repo/name-repo.component';
     NameResultComponent,
     RepoResultComponent,
     TimePassedPipe,
-    HiglightDirective,
-    NameRepoComponent
+  
+    NameRepoComponent,
+  
+    BoldDirective
   ],
   imports: [
     BrowserModule,

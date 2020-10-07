@@ -3,7 +3,7 @@
         <div class="card-body">
             <div class="card-title">
 
-                <a href="{{repo.html_url}}" style="color: yellow;">{{repo.name|titlecase}}</a>
+                <a href="{{repo.html_url}}" style="color: yellow;" >{{repo.name|titlecase}}</a>
 
             </div>
 
@@ -12,8 +12,8 @@
                 <p *ngIf="!repo.description">No description is available for this repository</p>
 
             </div>
-            <div class="card-bottom">
-                <div *ngIf="repo.language">
+            <div class="card-bottom" appBold>
+                <div *ngIf="repo.language"  >
                     <i class="fas fa-circle"></i>&nbsp;{{repo.language}}
                   </div>&nbsp;&nbsp;
                   <div *ngIf="!repo.language">
