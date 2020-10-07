@@ -11,6 +11,7 @@ import { RepoResultComponent } from './components/repo-result/repo-result.compon
 import { TimePassedPipe } from './pipes/time-passed.pipe';
 import { HiglightDirective } from './directives/higlight.directive';
 import { FormsModule } from '@angular/forms';
+import { NameRepoComponent } from './components/name-repo/name-repo.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     NameResultComponent,
     RepoResultComponent,
     TimePassedPipe,
-    HiglightDirective
+    HiglightDirective,
+    NameRepoComponent
   ],
   imports: [
     BrowserModule,

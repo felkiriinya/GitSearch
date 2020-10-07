@@ -1,0 +1,48 @@
+#user-details {
+    width: 80%;
+  }
+
+  h2{
+    background: black;
+    color: rgb(253, 251, 251);
+    margin-top: 20px;
+    padding: 5px;
+    width:500px;
+    margin-left:30%;
+
+  }
+
+  
+  #profile {
+    background:black;
+    color: rgb(248, 246, 246);
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: 13%;
+    border-radius: 8px;
+    position: relative;
+    left: 5%;
+    width: 900px;
+  }
+  #profile button {
+    height: 50px; 
+  }
+  #profile img {
+    height: 250px;
+   
+  }
+  
+  
+  .btn-container {
+    padding-bottom: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  
+  img {
+    max-width: 18rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 1.8rem;
+  }

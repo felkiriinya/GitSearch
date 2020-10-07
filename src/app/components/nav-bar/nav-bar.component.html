@@ -6,9 +6,11 @@
         <a routerLink="/my-home" >Home</a>&nbsp;&nbsp;
         
 
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search by username" aria-label="Search">
-            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+        <form class="form-inline my-2 my-lg-0" #userForm="ngForm">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search by username" aria-label="Search"
+                        name="username"
+                        [(ngModel)]="username">
+            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" (click)="userProfile()" routerLink="/name-result" routerLinkActive="activeRoute">Search</button>
           </form>&nbsp;&nbsp;&nbsp;
         
 
