@@ -10,7 +10,7 @@ On the application's landing page we have my profile where you can click on the 
 
 ## Live link
 
-Visit the application on 
+Visit the application on https://felkiriinya.github.io/GitSearch/my-home
 
 ## Development
 
