@@ -1,4 +1,5 @@
 <div class="container-fluid">
+  <div *ngIf= "user.login !== 'User not found'"> 
     <h2 class="text-center">{{user.login|titlecase}}'s PROFILE</h2>
       <div  id="user-details">
           <div id="profile" class="row">
@@ -24,5 +25,17 @@
     <div id="repos" *ngIf= "showRepositories">
       <app-name-repo [repos]="repos"></app-name-repo> 
     </div>
+  </div>
+
+
+  <div *ngIf= "user.login === 'User not found'" style="padding-top: 100px; font-weight: bold; font-size: 40px;">
+    <p class="text-center"> 
+      We couldn't find any users matching with that name
+   </p>
+  <p class="text-center">
+      Please enter a valid user name
+  </p>
+  </div>
+    
       
 </div>

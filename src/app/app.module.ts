@@ -13,6 +13,7 @@ import { TimePassedPipe } from './pipes/time-passed.pipe';
 import { FormsModule } from '@angular/forms';
 import { NameRepoComponent } from './components/name-repo/name-repo.component';
 import { BoldDirective } from './directives/bold.directive';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,9 @@ import { BoldDirective } from './directives/bold.directive';
   
     NameRepoComponent,
   
-    BoldDirective
+    BoldDirective,
+  
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
