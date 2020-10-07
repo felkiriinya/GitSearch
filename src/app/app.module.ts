@@ -9,6 +9,7 @@ import { NameResultComponent } from './components/name-result/name-result.compon
 import { RepoResultComponent } from './components/repo-result/repo-result.component';
 import { TimePassedPipe } from './pipes/time-passed.pipe';
 import { HiglightDirective } from './directives/higlight.directive';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HiglightDirective } from './directives/higlight.directive';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

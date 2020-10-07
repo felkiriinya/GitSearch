@@ -1,7 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { MyHomeComponent } from './components/my-home/my-home.component';
+import { NameResultComponent } from './components/name-result/name-result.component';
+import { RepoResultComponent } from './components/repo-result/repo-result.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: '', redirectTo: 'home', pathMatch:'full'},
+  {path: 'my-home', component: MyHomeComponent},
+  {path: 'name-result/:username' , component:NameResultComponent},
+  {path: 'repo-result/:reponame', component:RepoResultComponent},
+  
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

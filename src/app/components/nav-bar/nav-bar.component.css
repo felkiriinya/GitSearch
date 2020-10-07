@@ -1,0 +1,46 @@
+
+
+.bolder-colored{
+    color: #B3B6B7;
+    font-size: 35px;
+    font-family:  'beyond_the_mountainsregular', sans-serif;
+}
+.bold-colored{
+    color: #d19438;
+    font-size: 35px;
+    font-family:  'beyond_the_mountainsregular', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 15vh;
+    background-color: #020202;
+    width: 100%;
+    font-family: 'Concert One', cursive;
+    
+}
+
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a {
+    color: #d19438;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.nav-links a:hover{
+    color: #ebe7ee;
+    transition: 0.2s ease-in;
+}
+
