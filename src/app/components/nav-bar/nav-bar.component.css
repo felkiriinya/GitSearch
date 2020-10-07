@@ -32,14 +32,16 @@ nav{
     list-style: none;
 }
 
-.nav-links a {
+ a {
     color: #d19438;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
+    padding-left: 4%;
+    
     
 }
-.nav-links a:hover{
+ a:hover{
     color: #ebe7ee;
     transition: 0.2s ease-in;
 }

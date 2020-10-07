@@ -1,13 +1,15 @@
 <nav>
     <div class="logo">
         <h1><i class="fab fa-github" style="color:white"></i>&nbsp;<span class="bolder-colored">Git</span><span class="bold-colored">Search</span> </h1>
+        
     </div>
+    <a routerLink="/my-home" >Home</a>
     <ul class="nav-links">
-        <a routerLink="/my-home" >Home</a>&nbsp;&nbsp;
+       
         
 
         <form class="form-inline my-2 my-lg-0" #userForm="ngForm">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search by username" aria-label="Search"
+            <input class="form-control mr-sm-2" type="search" placeholder="Search for a github user" aria-label="Search"
                         name="username"
                         [(ngModel)]="username">
             <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" (click)="userProfile()" routerLink="/name-result" routerLinkActive="activeRoute">Search</button>
@@ -15,10 +17,10 @@
         
 
           
-        <form class="form-inline my-2 my-lg-0">
+        <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search by reponame" aria-label="Search">
             <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          </form> -->
 
     </ul>
 </nav>
