@@ -12,6 +12,10 @@ On the application's landing page we have my profile where you can click on the 
 
 Visit the application on https://felkiriinya.github.io/GitSearch/my-home
 
+## Figma
+
+This is the link to my [figma](https://www.figma.com/file/m36X3UT7Ro0KUf60YJnI70/Untitled?node-id=0%3A1) design
+
 ## Development
 
 #### Development server
